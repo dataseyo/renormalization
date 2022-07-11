@@ -1,0 +1,27 @@
+.navbar-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+
+
+    background-color: #05204A;
+}
+
+.navbar-sub-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar-title {
+    margin-left: 15px;
+    color: #E1E2EF;
+}
+
+.navbar-icon {
+    margin-right: 15px;
+    cursor: pointer;
+    color: white;
+}

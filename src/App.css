@@ -1,3 +1,8 @@
+:root {
+  --grid-col-num: 16;
+  --square-size: 25px;
+}
+
 .App {
   text-align: center;
 }

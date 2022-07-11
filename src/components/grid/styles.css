@@ -1,0 +1,30 @@
+.grid-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(var(--grid-col-num), 0fr);
+
+    justify-content: center;
+    align-items: center;
+}
+
+.square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid black;
+    height: var(--square-size);
+    width: var(--square-size);
+}
+
+.grid-button {
+    height: 40px;
+    width: 80px;
+    margin: 10px;
+}
