@@ -2,7 +2,7 @@
   "name": "renormalize",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://dataseyo.github.io/renormalization/",
+  "homepage": "https://dataseyo.github.io/renormalization",
   "dependencies": {
     "-": "^0.0.1",
     "@emotion/react": "^11.9.3",

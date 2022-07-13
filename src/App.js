@@ -10,8 +10,8 @@ function App() {
     <main className="App">
       <Navbar />
       <Routes>
-        <Route path='/' element={<Home/>}/>
-        <Route path='/about' element={<About/>}/>
+        <Route path='/renormalization' element={<Home/>}/>
+        <Route path='/renormalization/about' element={<About/>}/>
       </Routes> 
     </main>
   );
