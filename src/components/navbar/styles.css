@@ -18,6 +18,7 @@
 .navbar-title {
     margin-left: 15px;
     color: #E1E2EF;
+    cursor: pointer;
 }
 
 .navbar-icon {
