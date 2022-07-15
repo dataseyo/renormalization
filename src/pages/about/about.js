@@ -1,8 +1,13 @@
 import React from 'react'
 
-const About = () => {
+import Menu from '../../components/menu/menu'
+
+const About = ({open, setOpen}) => {
   return (
-    <div>About</div>
+    <div>
+      <Menu open={open} setOpen={setOpen}/>
+      About
+    </div>
   )
 }
 

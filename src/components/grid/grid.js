@@ -1,7 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGear } from '@fortawesome/free-solid-svg-icons'
+import { animated, useSpring } from 'react-spring'
 
 import './styles.css'
+import Menu from '../menu/menu'
+import Options from './options/options'
 
 const Grid = () => {
     const navigate = useNavigate()
@@ -12,7 +17,8 @@ const Grid = () => {
     const [squareSize, setSquareSize] = useState(50)
     const [gridState, setGridState] = useState([])
 
-    const [reset, setReset] = useState(0)
+    // options state
+    const [optionsOpen, setOptionsOpen] = useState(false)
     
     var possibleVals = ['+', '-']
 
@@ -27,7 +33,7 @@ const Grid = () => {
         // set grid state equal to random array
         setGridState(gridElements)
         console.log("grid state set")
-    }, [reset])
+    }, [])
     
     // averaging function
     const averageSpins = (spins) => {
@@ -100,14 +106,19 @@ const Grid = () => {
 
   return (
     <section className='grid-container'>
-        {gridState.length != 1 ? (
-            <button onClick={() => coarseGrain(gridState)} className='grid-button'>Coarse Grain</button>
-        ) :
-            <button className='grid-button' onClick={() => navigate(0)}>Reset</button>
-        }
+        <div className='grid-menu'>
+            {gridState.length != 1 ? (
+                <button onClick={() => coarseGrain(gridState)} className='grid-button'>Coarse Grain</button>
+            ) :
+                <button className='grid-button' onClick={() => navigate(0)}>Reset</button>
+            }
+
+            <FontAwesomeIcon onClick={() => setOptionsOpen(!optionsOpen)} icon={faGear} className='grid-icon' size='2xl'/>
+        </div>
+
+        {optionsOpen ? <Options /> : null}
         
         <div className='grid'>
-            
             {
                 // use +/- array to create a grid of squares containing +/-'s
                 gridState.map((element, index) => {

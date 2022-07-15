@@ -1,0 +1,12 @@
+.options-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    width: 423px;
+    height: auto;
+    background-color: rgba(134, 128, 128, 0.815);
+    border-radius: 5px;
+    padding: 4px;
+    margin: 8px;
+}
