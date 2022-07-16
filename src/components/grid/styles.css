@@ -34,9 +34,27 @@
     height: 40px;
     width: 80px;
     margin: 10px;
+    
 }
 
 .grid-icon {
     color: grey;
     cursor: pointer;
+}
+
+@keyframes spinIcon {
+    from {
+        transform: rotate(20deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.icon-spin {
+    color: #05204A;
+    animation-name: spinIcon;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
 }

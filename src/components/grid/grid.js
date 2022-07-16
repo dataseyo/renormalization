@@ -113,10 +113,14 @@ const Grid = () => {
                 <button className='grid-button' onClick={() => navigate(0)}>Reset</button>
             }
 
-            <FontAwesomeIcon onClick={() => setOptionsOpen(!optionsOpen)} icon={faGear} className='grid-icon' size='2xl'/>
+            <FontAwesomeIcon 
+                onClick={() => setOptionsOpen(!optionsOpen)} 
+                icon={faGear} 
+                className={`grid-icon ${optionsOpen ? 'icon-spin' : null}`} 
+                size='2xl'/>
         </div>
 
-        {optionsOpen ? <Options /> : null}
+        {optionsOpen ? <Options optionsOpen={optionsOpen}/> : null}
         
         <div className='grid'>
             {

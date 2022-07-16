@@ -5,7 +5,7 @@ import './styles.css'
 import Menu from '../../components/menu/menu'
 
 const Papers = ({open, setOpen}) => {
-    const [dummyDom, setDummyDom] = useState(null)
+    const [dummyDom, setDummyDom] = useState()
     // const [paperData, setPaperData] = useState()
 
     useEffect(() => {
@@ -16,7 +16,9 @@ const Papers = ({open, setOpen}) => {
             // 
             var el = document.createElement( 'html' )
             el.innerHTML = decodedResult
-            setDummyDom(el.getElementsByTagName('title'))
+            var titles = el.getElementsByTagName('title')
+            var arr = [...titles]
+            setDummyDom(arr)
         }
 
         fetchPapers()
@@ -31,10 +33,17 @@ const Papers = ({open, setOpen}) => {
     <div>
         <Menu open={open} setOpen={setOpen}/>
         <h2>Papers</h2>
-        <p>
-            
-            {/* {dummyDom != null ? <p>{dummyDom[1]}</p> : <p>Loading..</p>} */}
-        </p>
+            {dummyDom != undefined ? 
+                <ul>
+                    {dummyDom.map((item, i) => (
+                        <>{JSON.stringify(item)}</>
+                    ))}
+                </ul> 
+                : 
+                <p>Loading..</p>
+            }
+            {JSON.stringify(dummyDom)}
+
     </div>
   )
 }
