@@ -1,6 +1,6 @@
 # Renormalization
 
-Live at [https://dataseyo.github.io/renormalization/](https://dataseyo.github.io/renormalization/). The app is unfinished, but I'm building it to learn: css grid, javascript array methods, react-spring, css keyframe animations, and of course more react.
+Live at [https://dataseyo.github.io/renormalization/](https://dataseyo.github.io/renormalization/). The app is unfinished, but I'm building it to learn: css grid, javascript array methods, react-spring, framer motion, css keyframe animations, and of course more react.
 
 Renormalization is a technique from statistical mechanics and high energy physics that has recently been exported into other fields in physics and even biology. This app shows the process of block spin renormalization (nicely illustrated in [Wilson Scientific American](https://www.semanticscholar.org/paper/Problems-in-Physics-with-many-Scales-of-Length-Wilson/e6707e93334cd17d854875687354b7b8c17f0c63)) by way of a slightly modified majority rule, where:
 
