@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/renormalization/static/css/main.32009d92.css",
-    "main.js": "/renormalization/static/js/main.161d99ed.js",
+    "main.css": "/renormalization/static/css/main.aaba6252.css",
+    "main.js": "/renormalization/static/js/main.1b221822.js",
     "static/js/787.1cce904f.chunk.js": "/renormalization/static/js/787.1cce904f.chunk.js",
     "index.html": "/renormalization/index.html",
-    "main.32009d92.css.map": "/renormalization/static/css/main.32009d92.css.map",
-    "main.161d99ed.js.map": "/renormalization/static/js/main.161d99ed.js.map",
+    "main.aaba6252.css.map": "/renormalization/static/css/main.aaba6252.css.map",
+    "main.1b221822.js.map": "/renormalization/static/js/main.1b221822.js.map",
     "787.1cce904f.chunk.js.map": "/renormalization/static/js/787.1cce904f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.32009d92.css",
-    "static/js/main.161d99ed.js"
+    "static/css/main.aaba6252.css",
+    "static/js/main.1b221822.js"
   ]
 }
